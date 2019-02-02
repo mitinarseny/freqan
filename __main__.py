@@ -65,31 +65,6 @@ def main(args: typing.List[str]):
         replace_with.update(current_replace_with)
         i += 1
     print(''.join(replace_with.get(i.lower(), i) for i in encrypted_text))
-    # for word in isplit(encrypted_text):
-    #
-    #
-    #
-    #
-    #
-    #
-    #     for ch in text:
-    #         # if ch == ' ' and not COUNT_SPACES:
-    #         #     continue
-    #         try:
-    #             encrypted_frequencies[ch] += 1
-    #         except KeyError:
-    #             encrypted_frequencies[ch] = 0
-    #     encrypted_frequencies = dict(sorted(encrypted_frequencies.items(), key=lambda i: i[1], reverse=True))
-    #     replace_with = dict.fromkeys(encrypted_frequencies, ' ')
-    #     for i, (k, v) in enumerate(encrypted_frequencies.items()):
-    #         current_replace_with = input(f'{i + 1:2}. \'{k}\': {v:6}\n'
-    #                                 f'Replace with [enter for \' \']: ')
-    #         if current_replace_with != '\n':
-    #             replace_with[k] = current_replace_with
-    #     res = ''
-    #     for ch in text:
-    #         res += replace_with[ch]
-    # print(res)
 
 
 if __name__ == '__main__':
